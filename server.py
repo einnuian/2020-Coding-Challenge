@@ -50,7 +50,7 @@ def increase_score():
     for team in scoreboard:
         if team["id"] == team_id:
             team["score"] += 1
-
+    #print(scoreboard, file=sys.stderr)
     return jsonify(scoreboard=scoreboard)
 
 
